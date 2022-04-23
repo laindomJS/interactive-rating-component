@@ -1,0 +1,179 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* RESET CSS END */
+
+
+/* ROOT VARIABLES */
+:root {
+
+    --orange: hsl(25, 97%, 53%);
+
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+/* ROOT VARIABLES */
+
+
+/* BODY STYLES */
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+}
+/* BODY STYLES END */
+
+
+
+/* MAIN STYLES */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    height: 380px;
+    width: 390px;
+    border-radius: 18px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.icon__star {
+    background-color: hsl(212, 15%, 25%);
+    border-radius: 50%;
+    padding: .6rem;
+    width: 38px;
+    height: 36px;
+    margin: 0 0 1.6rem 0;
+}
+
+.illustration {
+    width: 160px;
+    margin: 2rem 0 1.2rem 0;
+}
+
+.selected {
+    background-color: hsl(212, 15%, 25%);
+    width: 210px;
+    padding: .1rem;
+    text-align: center;
+    border-radius: 30px;
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.view {
+    display: block;
+}
+
+.selected__para {
+    padding-top: .1rem;
+    color: var(--orange);
+}
+
+.card__title {
+    font-size: 24px;
+    margin-bottom: 1.1rem;
+}
+
+.card__text {
+    text-align: center;
+}
+
+.card__para {
+    width: 310px;
+    color: var(--medium-grey);
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+    font-size: 15px;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.num {
+    text-align: center;
+    padding: .8rem;
+    height: 43px;
+    width: 45px;
+    background-color: hsl(212, 15%, 25%);
+    border-radius: 100%;
+    color: var(--medium-grey);
+    font-weight: 700;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+
+.num:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+
+.btn {
+    height: 42px;
+    border-radius: 40px;
+    background-color: var(--orange);
+    color: var(--white);
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+/* MAIN STYLES END */
+
+
+
+/* ATTRIBUTION STYLES */
+.attribution { font-size: 13px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); transition: .2s ease; }
+.attribution a:hover { color: hsl(228, 73%, 75%); }
+/* ATTRIBUTION STYLES END */
+
+
+/* MEDIA QUERIES */
+@media (max-width: 375px) {
+    .card {
+        width: 350px;
+    }
+}
+ 
+
+/* MEDIA QUERIES END */
